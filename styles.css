@@ -32,12 +32,16 @@ header {
 }
 
 #logo {
-    width: 240px;
+    width: 190px;
 }
 
 #mobile-menu {
-    font-size: 2.2em;
+    font-size: 2em;
     color: #999999;
+}
+
+#mobile-menu:hover {
+    color: var(--text-color-pink);
 }
 
 header nav {
@@ -53,48 +57,53 @@ HERO SECTION
 #hero {
     display: flex;
     flex-direction: row;
-    padding: 30px 0 0 10%;
-    /* background-image: url(./images/graphic.png);
-    background-size: 60%;
-    background-repeat: no-repeat; */
+    padding: 20px 10%;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: url(./images/graphic.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 205px) calc(0% - 30px);
+    
 }
 
 #hero div:first-child {
     display: flex;
     flex-direction: column;
-    row-gap: 35px;
-    width: 70%;
+    padding-top: 35px;
+    row-gap: 30px;
+    width: 80%;
 }
 
 #hero div > h2 {
     color: var(--text-color-pink);
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 
 #hero div > h1 {
     color: var(--text-color-black);
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 900;
 
 }
 
 #hero div > p {
     color: var(--text-color-grey);
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 400;
 }
 
 #hero div button {
     box-sizing: border-box;
     color: var(--text-color-black);
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
     border: solid 5px transparent;
     border-radius: 100px;
-    background: linear-gradient(to right top, #ff3939 20%, #ffc039 80%);
+    background: linear-gradient(to right top, #FF3998 5%, #ff3939 35%, #ffc039 85%, #39FFA0 100%);
     box-shadow: 2px 1000px 1px #fff inset;
     background-origin: border-box;
-    padding: 25px 0;
-    width: 220px;
+    padding: 20px 0;
+    width: 188px;
 }
