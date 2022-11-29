@@ -19,6 +19,26 @@ GENERAL
     --margin-top: 60px;
 }
 
+#button {
+    box-sizing: border-box;
+    color: var(--text-color-black);
+    font-size: 1.3em;
+    font-weight: 400;
+    border: solid 5px transparent;
+    border-radius: 100px;
+    background: linear-gradient(to right top, #FF3998 5%, #ff3939 35%, #ffc039 85%, #39FFA0 100%);
+    box-shadow: 2px 1000px 1px #fff inset;
+    background-origin: border-box;
+    padding: 20px 0;
+    width: 188px;
+}
+
+#button > a {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--text-color-black);
+}
+
 /*
 ----
 HEADER
@@ -95,20 +115,6 @@ HERO SECTION
     font-weight: 400;
 }
 
-#hero div button {
-    box-sizing: border-box;
-    color: var(--text-color-black);
-    font-size: 1.3em;
-    font-weight: 400;
-    border: solid 5px transparent;
-    border-radius: 100px;
-    background: linear-gradient(to right top, #FF3998 5%, #ff3939 35%, #ffc039 85%, #39FFA0 100%);
-    box-shadow: 2px 1000px 1px #fff inset;
-    background-origin: border-box;
-    padding: 20px 0;
-    width: 188px;
-}
-
 /*
 ----
 BANNER SECTION
@@ -170,7 +176,7 @@ AUCTION ARTICLE
 */
 
 #auction {
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-top: var(--margin-top);
     padding: 0 10%;
@@ -259,4 +265,72 @@ AUCTION ARTICLE
     color: var(--text-color-grey);
     font-size: 1em;
     justify-self: end;
+}
+
+/*
+----
+SIGNUP
+----
+*/
+
+#upsell {
+    margin-top: var(--margin-top);
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    background-image: url(./images/upsell-footer-image.svg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: 210px;
+    background-position-x: calc(100% + 35px);
+    background-position-y: bottom;
+    border-top: solid 2px #eeeeeebc;
+    border-bottom: solid 2px #eeeeeebc;
+}
+
+#upsell div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.upsel-card {
+    padding: 0 10%
+}
+
+.upsel-card:nth-child(1) div {
+    width: 80%;
+}
+
+.upsel-card:nth-child(2) div {
+    width: 62%;
+}
+
+.upsel-card:first-child {
+    padding-top: 70px;
+}
+
+.upsel-card:nth-child(2) {
+    border-top: solid 2px #eeeeeebc;
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+
+#upsell div > h3 {
+    color: var(--text-color-pink);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#upsell div > h1 {
+    color: var(--text-color-black);
+    font-size: 3.5em;
+    font-weight: 900;
+
+}
+
+#upsell div > p {
+    color: var(--text-color-grey);
+    font-size: 1.3em;
+    font-weight: 400;
 }
