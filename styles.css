@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+----
+GENERAL
+----
+*/
+
+:root {
+    --page-width: 85%;
+}
+
+/*
+----
+HEADER
+----
+*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+#logo {
+    width: 200px;
+}
+
+#mobile-menu {
+    font-size: 2em;
+    color: #999999;
+}
+
+header nav {
+    display: none;
+}
