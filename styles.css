@@ -205,9 +205,13 @@ header nav {
 
 #companies > img:first-child {
   max-width: 100%;
-  height: 88%;
+  height: 100%;
   object-fit: cover;
   object-position: left;
+}
+
+#companies > img {
+  max-width: 100%;
 }
 
 #companies > img:nth-child(4) {
