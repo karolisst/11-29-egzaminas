@@ -241,6 +241,28 @@ COMPANIES SECTION
     display: none;
 }
 
+@media screen and (min-width: 992px) {
+
+    #companies {
+        grid-template-columns: repeat(5, auto);
+        column-gap: 5%;
+    }
+
+    #companies > img:first-child {
+        object-fit: contain;
+    }
+
+    #companies > img {
+        width: 80%;
+        object-fit: contain;
+    }
+
+    #companies > img:nth-child(4) {
+        display: block;
+    }
+
+}
+
 /*
 ----
 AUCTION ARTICLE
