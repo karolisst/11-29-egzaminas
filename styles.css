@@ -462,6 +462,31 @@ SIGNUP
     font-weight: 400;
 }
 
+@media screen and (min-width: 1440px) {
+    
+    #upsell {
+        background-size: 180px;
+        background-position-x: 80%
+    }
+
+    .upsel-card:nth-child(1) div {
+        width: 50%;
+    }
+    
+    .upsel-card:nth-child(2) div {
+        width: 50%;
+    }
+
+    .upsel-card:nth-child(2) {
+        border-top: none;
+    }
+
+    #upsell div > h3 {
+        font-size: 1em;
+    }
+}
+
+
 /*
 ----
 FOOTER
