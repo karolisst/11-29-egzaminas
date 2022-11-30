@@ -111,10 +111,10 @@ HERO SECTION
 #hero {
     display: flex;
     flex-direction: row;
-    padding: 60px 10%;
+    padding: 80px 10%;
     background-image: url(./images/graphic.svg);
     background-origin: border-box;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: 440px;
     background-position-x: calc(100% + 215px);
     background-position-y: -30px;
@@ -146,6 +146,36 @@ HERO SECTION
     font-weight: 400;
 }
 
+@media screen and (min-width: 992px) {
+
+    #hero {
+        padding: 120px 10% 150px 10%;
+        background-size: 600px;
+        background-position-x: calc(80% + 100px);
+        background-position-y: bottom;
+    }
+
+    #hero div:first-child {
+        width: 50%;
+    }
+
+    #hero div > h3 {
+        font-size: 1em;
+    }
+
+    #hero div > h1 {
+        font-size: 4.3em;
+    
+    }
+
+    #hero div > p {
+        color: var(--text-color-grey);
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+}
+
 /*
 ----
 BANNER SECTION
@@ -153,7 +183,6 @@ BANNER SECTION
 */
 
 #banner {
-    margin-top: var(--margin-top);
     display: flex;
     flex-direction: column;
     background-image: url(./images/background.svg);
