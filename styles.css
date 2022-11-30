@@ -15,6 +15,7 @@ GENERAL
     --text-color-pink: #FF3998;
     --text-color-black: #000;
     --text-color-grey: #868686;
+    --text-color-darkgrey: #616161;
     --text-color-orange: #FF8139;
     --margin-top: 60px;
 }
@@ -31,6 +32,14 @@ GENERAL
     background-origin: border-box;
     padding: 20px 0;
     width: 188px;
+}
+
+#button:hover {
+    box-shadow: none;
+}
+
+#logo {
+    width: 190px;
 }
 
 #button > a {
@@ -51,10 +60,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px 10%;
-}
-
-#logo {
-    width: 190px;
 }
 
 #mobile-menu {
@@ -334,4 +339,73 @@ SIGNUP
     color: var(--text-color-grey);
     font-size: 1.3em;
     font-weight: 400;
+}
+
+/*
+----
+FOOTER
+----
+*/
+
+footer {
+    margin-top: var(--margin-top);
+    padding: 0 10%;
+    margin-bottom: 80px;
+}
+
+#first-footer-element {
+    flex-direction: column;
+    display: flex;
+    row-gap: 20px;
+}
+
+#first-footer-element > p {
+    font-size: 1.2em;
+    color: var(--text-color-grey);
+}
+
+#footer-icons {
+    display: flex;
+    column-gap: 15px;
+}
+
+#footer-icons > a {
+    font-size: 1.2em;
+    color: var(--text-color-grey);
+}
+
+#second-footer-element {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2 , auto);
+    row-gap: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer-nav > h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--text-color-darkgrey);
+    padding-bottom: 10px;
+}
+
+.footer-nav > a {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--text-color-grey);
+}
+
+#copyright {
+    padding-top: 50px;
+}
+
+#copyright > p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ababab;
 }
