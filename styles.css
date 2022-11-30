@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*
 ----
 GENERAL
@@ -469,12 +473,16 @@ SIGNUP
         background-position-x: 80%
     }
 
+    .upsel-card {
+        padding: 0 5%
+    }
+
     .upsel-card:nth-child(1) div {
         width: 50%;
     }
     
     .upsel-card:nth-child(2) div {
-        width: 50%;
+        width: 45%;
     }
 
     .upsel-card:nth-child(2) {
@@ -520,6 +528,10 @@ footer {
     color: var(--text-color-grey);
 }
 
+#footer-icons > a:hover {
+    color: var(--text-color-pink);
+}
+
 #second-footer-element {
     padding-top: 50px;
     display: grid;
@@ -546,6 +558,10 @@ footer {
     color: var(--text-color-grey);
 }
 
+.footer-nav > a:hover {
+    color: var(--text-color-pink);
+}
+
 #copyright {
     padding-top: 50px;
 }
@@ -554,4 +570,47 @@ footer {
     font-size: 1.2em;
     font-weight: 400;
     color: #ababab;
+}
+
+#launch {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    
+    footer {
+        padding: 0 5%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 100px;
+        margin-bottom: 50px;
+    }
+
+    #second-footer-element {
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: repeat(4 , auto);
+    }
+
+    #copyright {
+        padding-top: 0; 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #copyright > p:nth-child(2) {
+        display: block;
+    }
+
+    #launch {
+        display: block;
+    }
+
+    #launch > p {
+        text-align: end;
+        font-size: 1.2em;
+        font-weight: 400;
+        color: #ababab;
+    }
+
 }
