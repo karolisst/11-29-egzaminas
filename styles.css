@@ -199,8 +199,19 @@ BANNER SECTION
 
 #banner > p {
     margin-top: 20px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 400;
+}
+
+@media screen and (min-width: 992px) {
+
+    #banner {
+        padding: 120px 5% 60px 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 20px;
+    }
+
 }
 
 /*
