@@ -9,12 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*
-----
-GENERAL
-----
-*/
-
 :root {
   --text-color-pink: #ff3998;
   --text-color-black: #000;
@@ -59,12 +53,6 @@ GENERAL
   font-weight: 500;
   color: var(--text-color-black);
 }
-
-/*
-----
-HEADER
-----
-*/
 
 header {
   display: flex;
@@ -116,12 +104,6 @@ header nav {
     color: var(--text-color-pink);
   }
 }
-
-/*
-----
-HERO SECTION
-----
-*/
 
 #hero {
   display: flex;
@@ -181,12 +163,6 @@ HERO SECTION
   }
 }
 
-/*
-----
-BANNER SECTION
-----
-*/
-
 #banner {
   display: flex;
   flex-direction: column;
@@ -216,12 +192,6 @@ BANNER SECTION
     border-radius: 20px;
   }
 }
-
-/*
-----
-COMPANIES SECTION
-----
-*/
 
 #companies {
   margin-top: var(--margin-top);
@@ -268,12 +238,6 @@ COMPANIES SECTION
     display: block;
   }
 }
-
-/*
-----
-AUCTION ARTICLE
-----
-*/
 
 #auction {
   display: flex;
@@ -394,12 +358,6 @@ AUCTION ARTICLE
   }
 }
 
-/*
-----
-SIGNUP
-----
-*/
-
 #upsell {
   margin-top: 100px;
   display: flex;
@@ -487,12 +445,6 @@ SIGNUP
     font-size: 1em;
   }
 }
-
-/*
-----
-FOOTER
-----
-*/
 
 footer {
   margin-top: var(--margin-top);
