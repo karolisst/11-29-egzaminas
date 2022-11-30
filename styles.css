@@ -92,6 +92,11 @@ header nav {
         color: var(--text-color-darkgrey);
     }
 
+    header nav > a:hover {
+        transition: 0.2s linear;
+        transform: scale(1.2);
+    }
+
     header nav > a:nth-child(4) {
         color: var(--text-color-pink);
     }
