@@ -18,6 +18,7 @@ GENERAL
     --text-color-darkgrey: #616161;
     --text-color-orange: #FF8139;
     --margin-top: 60px;
+    --margin-top-desktop: 80px;
 }
 
 #button {
@@ -75,7 +76,11 @@ header nav {
     display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1440px) {
+
+    header {
+        padding: 30px 5%;
+    }
     
     #mobile-menu {
         display: none;
@@ -146,17 +151,17 @@ HERO SECTION
     font-weight: 400;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1440px) {
 
     #hero {
-        padding: 120px 10% 150px 10%;
-        background-size: 600px;
+        padding: 120px 5% 150px 5%;
+        background-size: 700px;
         background-position-x: calc(80% + 100px);
         background-position-y: bottom;
     }
 
     #hero div:first-child {
-        width: 50%;
+        width: 45%;
     }
 
     #hero div > h3 {
@@ -164,14 +169,8 @@ HERO SECTION
     }
 
     #hero div > h1 {
-        font-size: 4.3em;
+        font-size: 5.2em;
     
-    }
-
-    #hero div > p {
-        color: var(--text-color-grey);
-        font-size: 1em;
-        font-weight: 400;
     }
 
 }
@@ -203,12 +202,12 @@ BANNER SECTION
     font-weight: 400;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1440px) {
 
     #banner {
         padding: 120px 5% 60px 5%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         border-radius: 20px;
     }
 
@@ -241,11 +240,15 @@ COMPANIES SECTION
     display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1440px) {
 
     #companies {
+        margin-top: var(--margin-top-desktop);
+        padding: 0 5%;
         grid-template-columns: repeat(5, auto);
         column-gap: 5%;
+        justify-content: space-between;
+        align-items: center;
     }
 
     #companies > img:first-child {
@@ -255,6 +258,7 @@ COMPANIES SECTION
     #companies > img {
         width: 80%;
         object-fit: contain;
+        justify-self: center;
     }
 
     #companies > img:nth-child(4) {
@@ -360,6 +364,34 @@ AUCTION ARTICLE
     color: var(--text-color-grey);
     font-size: 1em;
     justify-self: end;
+}
+
+@media screen and (min-width: 1440px) {
+
+    #auction > h2 {
+        padding: 0 5%;
+        font-size: 2.4em;
+        font-weight: 500;
+    }
+    
+    #auction > p {
+        padding: 0 5%;
+    }
+
+    #auction {
+        margin-top: var(--margin-top-desktop);
+    }
+
+    .cards {
+        padding: 0 5%;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+
+    .table > img {
+        max-width: 100%;
+    }
+
 }
 
 /*
